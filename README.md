@@ -2,17 +2,17 @@
 
 Swifty helpers for working with the Swift [AWS SDK](https://github.com/awslabs/aws-sdk-swift).
 
-## 📱 Requirements
+## Requirements
 
 Swift 5.9 toolchain with Swift Package Manager.
 
-## 🖥 Installation
+## Installation
 
 AWS Extras is distributed using the [Swift Package Manager](https://swift.org/package-manager). To install it into a project, add it as a dependency within your `Package.swift` manifest:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Mobelux/swift-aws-extras.git", from: "0.1.0")
+    .package(url: "https://github.com/mgacy/swift-aws-extras.git", from: "0.1.0")
 ]
 ```
 
@@ -28,9 +28,9 @@ Where `<product>` is one of the following:
 - `Persistence`
 - `Secrets`
 
-## ⚙️ Usage
+## Usage
 
-### 📧 EmailSender
+### EmailSender
 
 Initialize an `EmailSender`:
 
@@ -60,7 +60,7 @@ let messageID = try await sender.send(
 )
 ```
 
-### 🗄️ Persistence
+### Persistence
 
 Add `AttributeValueConvertible` conformance to model types:
 
@@ -95,7 +95,7 @@ let model = MyModel(name: "foo", value: 42)
 try await persistence.put(model)
 ```
 
-### 🗝️ Secrets
+### Secrets
 
 Initialize `Secrets` with a region:
 
